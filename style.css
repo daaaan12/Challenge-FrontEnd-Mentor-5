@@ -1,0 +1,298 @@
+/* 
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700
+
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&family=Martian+Mono:wght@300&display=swap');
+
+
+:root {
+
+    --display-desktop: 1440px;
+    --display-mobile: 375px;
+
+    --brigth-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --linear-color: linear-gradient(to right, red, blue, yellow);
+
+    --bg-color: hsl(0, 0%, 95%);
+    --p-color: hsla(0, 0%, 100%, 0.75);
+
+    --font-lexend: 'Lexend Deca';
+    --font-big: 'Big Shoulders Display', cursive;
+    --font-martian: 'Martian Mono', monospace;
+    --font-barlow: 'Barlow Condensed', sans-serif;
+   
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, 
+p {
+    color: var(--p-color);
+}
+
+h1 {
+    font-size: 1.8em;
+    
+    font-family: var(--font-martian);
+}
+
+p {
+    font-size: 1em;
+    font-family: var(--font-lexend);
+}
+
+.btn1 {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn1:hover {
+    background-color: var(--brigth-orange);
+    box-shadow: 0px 5px 15px 15px rgba(22, 24, 24, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .btn1:active {
+    transform: translateY(-1px);
+  }
+
+
+
+  .btn2 {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn2:hover {
+    background-color: var(--dark-cyan);
+    box-shadow: 0px 5px 15px 15px rgba(22, 24, 24, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .btn2:active {
+    transform: translateY(-1px);
+  }
+
+
+
+  .btn3 {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn3:hover {
+    background-color: var(--very-dark-cyan);
+    box-shadow: 0px 5px 15px 15px rgba(22, 24, 24, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .btn3:active {
+    transform: translateY(-1px);
+  }
+
+
+
+
+.orange {
+    color: var(--brigth-orange);
+   
+}
+
+.dark-cyan {
+    color: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+    color: var(--very-dark-cyan);
+}
+
+
+#colunas {
+   background-color: black;
+   display: flex;
+   min-width: 750px;
+   height: 400px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 5px;  
+   box-shadow: 5px 5px 10px 25px  rgb(221, 216, 216) ;
+   
+}
+   
+
+.coluna1,
+.coluna2,
+.coluna3 {
+    width: 33.33%;  
+         
+}
+
+.coluna1 {
+    border-radius: 5px 0px 0px 5px;
+    background-color: var(--brigth-orange);
+    padding: 20px;
+      
+}
+.coluna2 {
+   
+    background-color: var(--dark-cyan);
+    padding: 20px;
+    
+   
+ }
+
+ .coluna3 {
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--very-dark-cyan);
+    padding: 20px;
+     
+ }
+
+ .coluna1:hover {
+    background-color: rgb(250, 182, 94) ;
+ }
+ .coluna2:hover {
+    background-color: rgb(14, 141, 141);
+ }
+ .coluna3:hover {
+    background-color: rgb(56, 95, 85);
+ }
+
+ 
+ @media (max-width: 600px ) {
+
+    #colunas {
+    
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    position: relative;
+    left: 550px;
+    top: 250px;
+    
+    
+    
+    }
+
+    .coluna1,
+    .coluna2,
+    .coluna3 {
+     width: 250px;   
+     border-radius: 0;
+     margin-bottom: 5px;
+     
+    }
+
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+        
+    }
+
+    img {
+        max-width: 40px;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3 {
+        max-width: 180px;
+        height: 40px;
+        font-size: 0.6em;
+        
+    }
+
+    .attribution {
+        font-size: 11px;
+        
+        
+      }
+ }
